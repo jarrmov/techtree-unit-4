@@ -1,0 +1,60 @@
+/* ============================================= */
+/*              Grid System                      */
+/* ============================================= */
+
+.container {
+  padding: 0 10px;
+  @include mediaquerie(tablet) {
+    max-width: 1400px;
+    @include centered;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 10px;
+  @include mediaquerie(tablet) {
+    flex-direction: row;
+  }
+}
+
+[class^="col"] {
+  margin-top: 10px;
+  flex-basis: 100%;
+  min-height: 25px;
+  padding: 10px;
+  border-radius: $brdRds;
+  @include mediaquerie(tablet) {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+  }
+}
+
+.theme {
+  @include columnColor($gridColors);
+}
+
+@include mediaquerie(tablet) {
+  [class^="col"] + [class^="col"] {
+    margin-left: 10px;
+  }
+  @for $num from 1 through $colNum {
+    .col-#{$num} {
+      flex-basis: (100% / $colNum) * $num;
+    }
+  }
+}
+
+.card {
+  flex-basis: 100%;
+}
+
+.centered {
+  @include mediaquerie(tablet) {
+    flex-basis: 58.33%;
+    @include centered;
+  }
+}

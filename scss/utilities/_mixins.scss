@@ -1,0 +1,21 @@
+@mixin centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin mediaquerie($point) {
+  @if $point == tablet {
+    @media screen and(min-width: $breakpoint) {
+      @content;
+    }
+  }
+}
+
+@mixin columnColor($map) {
+  @each $number, $color in $map {
+    &.col-#{$number} {
+      background-color: $color;
+    }
+  }
+}

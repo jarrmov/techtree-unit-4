@@ -1,0 +1,56 @@
+// Colors
+
+$color-primary: #777;
+$color-secondary: #58e1c1;
+$color-white: #fff;
+$color-grey-ligh: #ccc;
+
+$color-link: #51ddfc;
+
+$color-default: #51ddfc;
+$color-success: #63cc82;
+$color-error: #e4757a;
+$color-warning: #fd7856;
+$color-info: #927bc1;
+
+$color__col1: #927bc1;
+$color__col2: #fd7856;
+$color__col3: #deb2ee;
+$color__col4: #7ee6fd;
+$color__col5: #88d9a0;
+$color__col6: #4da2bb;
+$color__col7: #ec9fa3;
+$color__col8: #fd9f85;
+$color__col9: #e4757a;
+$color__col10: #63cc82;
+$color__col11: #51ddfc;
+$color__col12: #80e8d1;
+
+// Fonts
+
+$font-primary: "Lato";
+$font-secondary: "sans-serif";
+
+// Layout
+
+$brdRds: 5px;
+$breakpoint: 768px;
+
+// Map
+
+$gridColors: (
+  "1": $color__col1,
+  "2": $color__col2,
+  "3": $color__col3,
+  "4": $color__col4,
+  "5": $color__col5,
+  "6": $color__col6,
+  "7": $color__col7,
+  "8": $color__col8,
+  "9": $color__col9,
+  "10": $color__col10,
+  "11": $color__col11,
+  "12": $color__col12,
+);
+
+$colNum: 12;
